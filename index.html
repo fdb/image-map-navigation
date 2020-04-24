@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
+    </nav>
+    <div class="container">
+      <h1>Choose your path...</h1>
+      <img
+        src="img/forking-forest-path.jpg"
+        alt="Forking Forest Path"
+        usemap="#image-map"
+      />
+      <p class="credit">
+        Photo by <a href="https://unsplash.com/@leliejens">Jens Lelie</a> on
+        <a href="https://unsplash.com/photos/u0vgcIOQG08">Unsplash</a>
+      </p>
+    </div>
+    <map name="image-map">
+      <area
+        target=""
+        alt=""
+        title=""
+        href="left.html"
+        coords="24,9,820,856"
+        shape="rect"
+      />
+      <area
+        target=""
+        alt=""
+        title=""
+        href="right.html"
+        coords="827,12,1483,856"
+        shape="rect"
+      />
+    </map>
+
+    <script src="js/imagemap-resizer.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        imageMapResize();
+      });
+    </script>
+  </body>
+</html>
